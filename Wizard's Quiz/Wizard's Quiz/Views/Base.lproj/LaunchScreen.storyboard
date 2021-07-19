@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="3fO-wD-Zgu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="250" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wse-Se-ijU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Developed By:  Stephen Sterling" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="05b-3j-sRq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
+                                        <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks For Playing!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pj-Gg-NTb">
+                                        <rect key="frame" x="0.0" y="513" width="414" height="305"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3fO-wD-Zgu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8Sr-Ut-PGc"/>
+                            <constraint firstItem="Wse-Se-ijU" firstAttribute="leadingMargin" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LVZ-eY-0Ru"/>
+                            <constraint firstItem="Wse-Se-ijU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UPv-ss-u1O"/>
+                            <constraint firstItem="Wse-Se-ijU" firstAttribute="trailingMargin" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W2O-HV-XJv"/>
+                            <constraint firstItem="3fO-wD-Zgu" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="hj1-Sf-0bh"/>
+                            <constraint firstItem="3fO-wD-Zgu" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="pxf-la-YCN"/>
+                            <constraint firstItem="3fO-wD-Zgu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="wZr-k7-h8h"/>
+                            <constraint firstItem="Wse-Se-ijU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xHC-5T-0ct"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="138" height="298.66665649414062"/>
+    </resources>
+</document>
