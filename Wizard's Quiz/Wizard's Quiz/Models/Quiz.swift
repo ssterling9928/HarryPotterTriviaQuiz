@@ -161,9 +161,47 @@ class Quiz {
         
             Question(text: "What position does Ron play on the Quidditch team?", possAnswer1: "Seeker", possAnswer2: "Keeper", possAnswer3: "Chaser", possAnswer4: "Beater", answerIndex: 1),
         
-            Question(text: "Who is Harry Potter's Godfather", possAnswer1: "Lucius Malfoy", possAnswer2: "Albus Dumbledore", possAnswer3: "Hagrid", possAnswer4: "Sirius Black", answerIndex: 3)
+            Question(text: "Who is Harry Potter's Godfather", possAnswer1: "Lucius Malfoy", possAnswer2: "Albus Dumbledore", possAnswer3: "Hagrid", possAnswer4: "Sirius Black", answerIndex: 3),
             
         
+            
+            // update 1.4
+            
+            
+            Question(text: "What is the name of Harry's Owl?", possAnswer1: "Errol", possAnswer2: "Pigwigeon", possAnswer3: "Fawkes", possAnswer4: "Hedwig", answerIndex: 3),
+            
+            Question(text: "What sport is played on broomsticks?", possAnswer1: "Quidditch", possAnswer2: "Gobstones", possAnswer3: "Exploding Snap", possAnswer4: "Chess", answerIndex: 0),
+            
+            Question(text: "What house does Draco Malfoy belong to?", possAnswer1: "Hufflepuff", possAnswer2: "Ravenclaw", possAnswer3: "Slytherin", possAnswer4: "Gryffindor", answerIndex: 2),
+            
+            Question(text: "Who is the Headmaster when harry starts Hogwarts?", possAnswer1: "Minerva Mcgonagall", possAnswer2: "Albus Dumbledore", possAnswer3: "Severus Snape", possAnswer4: "Dolores Umbridge", answerIndex: 1),
+            
+            Question(text: "What is Ron's last name?", possAnswer1: "Granger", possAnswer2: "Longbottom", possAnswer3: "Weasley", possAnswer4: "Potter", answerIndex: 2),
+            
+            Question(text: "What is Hermione's last name?", possAnswer1: "Granger", possAnswer2: "Longbottom", possAnswer3: "Lovegood", possAnswer4: "Patil", answerIndex: 0),
+            
+            Question(text: "What is Voldemort's real first name?", possAnswer1: "James", possAnswer2: "Tom", possAnswer3: "Lucius", possAnswer4: "Sirius", answerIndex: 1),
+            
+            Question(text: "What Hogwarts house uses a lion symbol?", possAnswer1: "Hufflepuff", possAnswer2: "Ravenclaw", possAnswer3: "Slytherin", possAnswer4: "Gryffindor", answerIndex: 3),
+            
+            Question(text: "What type of creature is Dobby?", possAnswer1: "Centaur", possAnswer2: "Goblin", possAnswer3: "House Elf", possAnswer4: "Giant", answerIndex: 2),
+            
+            Question(text: "What is the name of the Weasley family home?", possAnswer1: "The Burrow", possAnswer2: "Grimmauld Place", possAnswer3: "Shell Cotage", possAnswer4: "Hogsmead", answerIndex: 0),
+            
+            Question(text: "What platform does the Hogwarts Express leave from?", possAnswer1: "Platform Ten and a half", possAnswer2: "Platform Nine and three quarters", possAnswer3: "Platform Eight and a quarter", possAnswer4: "Eleven", answerIndex: 1),
+            
+            Question(text: "Which professor teaches Defense Against the Dark Arts in Harry's first year at Hogwarts?", possAnswer1: "Professor Mcgonagall", possAnswer2: "Professor Snape", possAnswer3: "Professor Quirrell", possAnswer4: "Professor Trewlany", answerIndex: 2),
+            
+            Question(text: "Who raises Harry from a baby?", possAnswer1: "His parents", possAnswer2: "His grandparents", possAnswer3: "Hagrid", possAnswer4: "His Aunt and Uncle", answerIndex: 3),
+            
+            Question(
+                text: "What is Harry's middle name?",
+                possAnswer1: "James",
+                possAnswer2: "Sirius",
+                possAnswer3: "Albus",
+                possAnswer4: "Arthur",
+                answerIndex: 0
+            )
         
         
     ]
@@ -294,9 +332,46 @@ class Quiz {
         
             Question(text: "What event is going on when the death eaters attack the Burrow, right before Harry, Ron, and Hermione disapparate?", possAnswer1: "An Anniversary Party", possAnswer2: "A Birthday Party", possAnswer3: "A Funeral", possAnswer4: "A wedding", answerIndex: 3),
         
-            Question(text: "What is the device called that Dumbledore uses to revisit old memories?", possAnswer1: "A Portkey", possAnswer2: "A Pensieve", possAnswer3: "A Boggart", possAnswer4: "A Memorium", answerIndex: 1)
+            Question(text: "What is the device called that Dumbledore uses to revisit old memories?", possAnswer1: "A Portkey", possAnswer2: "A Pensieve", possAnswer3: "A Boggart", possAnswer4: "A Memorium", answerIndex: 1),
         
         
+            // update 1.4
+            
+            Question(text: "What does the spell 'Lumos' do?", possAnswer1: "Produces Light", possAnswer2: "Unlocks Doors", possAnswer3: "Stuns targets", possAnswer4: "Disarms opponent", answerIndex: 0),
+            
+            Question(text: "What is the name of the bank in Diagon Alley?", possAnswer1: "Ollivanders", possAnswer2: "Flourish and Blotts", possAnswer3: "Gringotts", possAnswer4: "Wizards Bank", answerIndex: 2),
+            
+            Question(text: "What is the symbol of the Ravenclaw house?", possAnswer1: "Raven", possAnswer2: "Eagle", possAnswer3: "Phoenix", possAnswer4: "Owl", answerIndex: 1),
+            
+            Question(text: "What is Harry's Patronus form?", possAnswer1: "Phoenix", possAnswer2: "Wolf", possAnswer3: "Otter", possAnswer4: "Stag", answerIndex: 3),
+            
+            Question(text: "What is Hermione's Patronus form?", possAnswer1: "Otter", possAnswer2: "Rabbit", possAnswer3: "Cat", possAnswer4: "Swan", answerIndex: 0),
+            
+            Question(text: "What magical map shows people at Hogwarts?", possAnswer1: "The Elder's Map", possAnswer2: "Founder's Map", possAnswer3: "Marauder's Map", possAnswer4: "The Map of Hogwarts", answerIndex: 2),
+            
+            Question(text: "What magical object turns back time?", possAnswer1: "Deluminator", possAnswer2: "Time-Turner", possAnswer3: "Pensieve", possAnswer4: "Portkey", answerIndex: 1),
+            
+            Question(text: "What Potion changes your appearance to another persons?", possAnswer1: "Felix Felicis", possAnswer2: "Veritaserum", possAnswer3: "Polyjuice Potion", possAnswer4: "Amortenntia", answerIndex: 2),
+            
+            Question(text: "What object chooses the champions that participate in the Triwizard Tournament?", possAnswer1: "Sorting Hat", possAnswer2: "Elder Wand", possAnswer3: "Mirror of Erised", possAnswer4: "Goblet of Fire", answerIndex: 3),
+            
+            Question(
+                text: "Which house uses a badger symbol?",
+                possAnswer1: "Hufflepuff",
+                possAnswer2: "Gryffindor",
+                possAnswer3: "Ravenclaw",
+                possAnswer4: "Slytherin",
+                answerIndex: 0
+            ),
+            
+            Question(
+                text: "What is the name of Filch's cat?",
+                possAnswer1: "Mrs Norris",
+                possAnswer2: "Crookshanks",
+                possAnswer3: "Arabella",
+                possAnswer4: "Miss Paws",
+                answerIndex: 0
+            ),
         
     ]
     
@@ -423,7 +498,41 @@ class Quiz {
         
             Question(text: "Who bit Remus Lupin and turned him into a werewolf?", possAnswer1: "Voldemort", possAnswer2: "Fenir Greyback", possAnswer3: "Silas Danso", possAnswer4: "Randal Barric", answerIndex: 1),
         
-            Question(text: "What does the spell Defodio do?", possAnswer1: "To cause the target confusion", possAnswer2: "To defend another spell", possAnswer3: "To create certain foods", possAnswer4: "To gouge out portion of earth or stone", answerIndex: 3)
+            Question(text: "What does the spell Defodio do?", possAnswer1: "To cause the target confusion", possAnswer2: "To defend another spell", possAnswer3: "To create certain foods", possAnswer4: "To gouge out portion of earth or stone", answerIndex: 3),
+            
+            
+            // update 1.4
+            
+            Question(text: "What is Dumbledore's full name?", possAnswer1: "Albus Percival Wulfric Brian Dumbledore", possAnswer2: "Albus Wulfric Dumbledore", possAnswer3: "Albus Percival Brian Dumbledore", possAnswer4: "Albus Percival Wulfric Dumbledore", answerIndex: 0),
+            
+            Question(text: "What is the core of Harry's wand made of?", possAnswer1: "Dragon Heartstring", possAnswer2: "Pheonix Feather", possAnswer3: "Unicorn Hair", possAnswer4: "Thestral Tail Hair", answerIndex: 1),
+            
+            Question(text: "What house was Tonks in?", possAnswer1: "Hufflepuff", possAnswer2: "Ravenclaw", possAnswer3: "Slytherin", possAnswer4: "Gryffindor", answerIndex: 0),
+            
+            Question(text: "Who kills Dobby?", possAnswer1: "Lucius Malfoy", possAnswer2: "Draco Malfoy", possAnswer3: "Voldemort", possAnswer4: "Bellatrix Lestrange", answerIndex: 3),
+            
+            Question(text: "What is the name of the Black Family house elf?", possAnswer1: "Dobby", possAnswer2: "Winky", possAnswer3: "Kreacher", possAnswer4: "Hokey", answerIndex: 2),
+            
+            Question(text: "What is Voldemort's full real name?", possAnswer1: "Tom Salazar Riddle", possAnswer2: "Tom Marvolo Riddle", possAnswer3: "Tom Gellert Riddle", possAnswer4: "Tom Orion Riddle", answerIndex: 1),
+            
+            Question(text: "What is Luna Lovegood's Patronus form", possAnswer1: "Hare", possAnswer2: "Fox", possAnswer3: "Swan", possAnswer4: "Cat", answerIndex: 0),
+            
+            Question(text: "What horcrux is Destroyed by Neville Longbottom?", possAnswer1: "The Cup", possAnswer2: "The Locket", possAnswer3: "Harry", possAnswer4: "Nagini", answerIndex: 3),
+            
+            Question(text: "Who kill Severus Snape?", possAnswer1: "Harry Potter", possAnswer2: "Albus Dumbledore", possAnswer3: "Bellatrix Lestrange", possAnswer4: "Nagini", answerIndex: 3),
+            
+            Question(text: "What spell repells Dementors?", possAnswer1: "Expelliarmus", possAnswer2: "Protego Totalum", possAnswer3: "Expecto Protronum", possAnswer4: "Riddikulus", answerIndex: 2),
+            
+            Question(text: "What is the name of the prizon that is guarded by dementors?", possAnswer1: "Nurmengard", possAnswer2: "Rock Hill", possAnswer3: "Azkaban", possAnswer4: "Malfoy Manor", answerIndex: 2),
+            
+            Question(
+                text: "What is the name of the Knight Bus conductor?",
+                possAnswer1: "Stan Shunpike",
+                possAnswer2: "Ernie Prang",
+                possAnswer3: "Tom",
+                possAnswer4: "Mundungus Fletcher",
+                answerIndex: 0
+            ),
     
     ]
     
