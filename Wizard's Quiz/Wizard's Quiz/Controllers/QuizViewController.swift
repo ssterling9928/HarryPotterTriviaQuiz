@@ -18,6 +18,10 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var buttonThree: UIButton!
     @IBOutlet weak var buttonFour: UIButton!
     
+    @IBOutlet var answerButtons: [UIButton]!
+    
+    var quizTimer: Timer?
+    
     
     override func viewDidLoad() {
         
@@ -36,44 +40,31 @@ class QuizViewController: UIViewController {
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         
-        let isCorrect = quizManager!.checkAnswer(sender)
+        quizTimer?.invalidate()  // Cancel any pending timer
         
-               
-        if (isCorrect){
-            sender.backgroundColor = UIColor.green
-            quizManager!.score += 1
-        }
-        else {
-            sender.backgroundColor = UIColor.red
+        let isCorrect = quizManager?.checkAnswer(sender) ?? false  // Safe unwrap
             
-            // turn correct answer green
-            let answer = quizManager?.getAnswer()
-            
-            if (answer == 0){
-                buttonOne.backgroundColor = UIColor.green
+        if isCorrect {
+            sender.backgroundColor = .green
+            quizManager?.score += 1
+        } else {
+            sender.backgroundColor = .red
+            if let answer = quizManager?.getAnswer() {
+                [buttonOne, buttonTwo, buttonThree, buttonFour][answer].backgroundColor = .green
             }
-            if (answer == 1){
-                buttonTwo.backgroundColor = UIColor.green
-            }
-            if (answer == 2){
-                buttonThree.backgroundColor = UIColor.green
-            }
-            if (answer == 3){
-                buttonFour.backgroundColor = UIColor.green
-            }
-            
         }
         
+        quizManager?.UpdateQuestionIndex()
         
+        answerButtons.forEach { $0.isEnabled = false }
         
-        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
-       
-        quizManager!.UpdateQuestionIndex()
-        
-        if (quizManager!.isOver == true){
+        if quizManager?.isOver == true {
             LoadEndController()
+            return  // Early exit
         }
-
+        
+        // Schedule new timer
+        quizTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
     func LoadEndController() {
@@ -103,6 +94,10 @@ class QuizViewController: UIViewController {
         buttonThree.setTitle(quizManager!.quiz.chosenQuestions[quizManager!.questionIndex].possAnswer3, for: UIControl.State.normal)
         
         buttonFour.setTitle(quizManager!.quiz.chosenQuestions[quizManager!.questionIndex].possAnswer4, for: UIControl.State.normal)
+        
+        answerButtons.forEach { $0.isEnabled = true }
+            
+        quizTimer = nil
     }
     
     

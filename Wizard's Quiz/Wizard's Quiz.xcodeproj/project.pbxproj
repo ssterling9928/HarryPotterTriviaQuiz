@@ -39,13 +39,14 @@
 		DC25E816243ABEC7008613D8 /* AskMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMenuViewController.swift; sourceTree = "<group>"; };
 		DC25E818243AF695008613D8 /* OptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsVC.swift; sourceTree = "<group>"; };
 		DC25E81A243BA53B008613D8 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		DC3E42842F257344007C8785 /* Wizard's Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wizard's Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3E42852F25B0CC007C8785 /* Wizard's Quiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wizard's Quiz.entitlements"; sourceTree = "<group>"; };
 		DC65E2AF240CAED600FC0C35 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DC65E2B3240CB42B00FC0C35 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		DC65E2B5240CB48000FC0C35 /* QuizDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDifficulty.swift; sourceTree = "<group>"; };
 		DC90105E2424547B001E5578 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC3115C2414548000ED22B9 /* MagicSchoolOne-ovYz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MagicSchoolOne-ovYz.ttf"; sourceTree = "<group>"; };
 		DCC3115E24146DF000ED22B9 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
-		DCDC4C942432C5B700EBA20D /* Wizard's Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Wizard's Quiz.app"; path = "/Users/stephen/Documents/Wizard's Quiz/build/Debug-iphoneos/Wizard's Quiz.app"; sourceTree = "<absolute>"; };
 		DCDC4C962432DA9600EBA20D /* backgroundMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backgroundMusic.wav; sourceTree = SOURCE_ROOT; };
 		DCEC1788241C5494006F9292 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,12 +67,14 @@
 			children = (
 				DC24241B240B25F0006E2ADF /* Wizard's Quiz */,
 				DC242438240B4453006E2ADF /* Fonts */,
+				DC3E42842F257344007C8785 /* Wizard's Quiz.app */,
 			);
 			sourceTree = "<group>";
 		};
 		DC24241B240B25F0006E2ADF /* Wizard's Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				DC3E42852F25B0CC007C8785 /* Wizard's Quiz.entitlements */,
 				DCC8F2042419BEC0009ABFCA /* Delegates */,
 				DCC8F2062419BEED009ABFCA /* Models */,
 				DCDC4C952432DA8300EBA20D /* Music */,
@@ -159,7 +162,7 @@
 			);
 			name = "Wizard's Quiz";
 			productName = Harry_Potter_Quiz;
-			productReference = DCDC4C942432C5B700EBA20D /* Wizard's Quiz.app */;
+			productReference = DC3E42842F257344007C8785 /* Wizard's Quiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -373,16 +376,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Wizard's Quiz/Wizard's Quiz.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BUG98A88L3;
 				INFOPLIST_FILE = "$(SRCROOT)/Wizard's Quiz/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Wizard's Quiz";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stephensterling.Harry-Potter-Quiz";
 				PRODUCT_NAME = "Wizard's Quiz";
 				SWIFT_VERSION = 5.0;
@@ -394,16 +400,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Wizard's Quiz/Wizard's Quiz.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BUG98A88L3;
 				INFOPLIST_FILE = "$(SRCROOT)/Wizard's Quiz/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Wizard's Quiz";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stephensterling.Harry-Potter-Quiz";
 				PRODUCT_NAME = "Wizard's Quiz";
 				SWIFT_VERSION = 5.0;
